@@ -7,6 +7,6 @@ This changelog records notable, user-facing project changes. The project does no
 - Added repository usage, contribution, security, support, roadmap, and technical documentation.
 - Clarified that checkout, orders, contact submissions, and pagination are presentation placeholders rather than implemented services.
 
-## 2024-08-16
+## 2025-07-20
 
-- Initial repository upload. The source represents the state present in the initial Git commit; this date is the commit date, not necessarily the original project creation date.
+- Initial repository upload. This is the initial Git commit date; it does not establish when the project was originally created.
