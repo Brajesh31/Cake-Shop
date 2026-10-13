@@ -1,0 +1,13 @@
+# Use consistent text line endings across operating systems.
+* text=auto eol=lf
+
+# Preserve images and other binary assets exactly.
+*.gif binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.svg text eol=lf
+*.webp binary
+*.woff binary
+*.woff2 binary
