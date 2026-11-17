@@ -1,4 +1,3 @@
-import React from 'react'
 import Section1 from '../Home/Section1'
 import Blogs from '../Components/Blog/Blogs'
 import Pagination from './Pagination'
