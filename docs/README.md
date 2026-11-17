@@ -11,10 +11,12 @@ Welcome to the Cake Shop documentation. These guides describe the actual React +
 - [User stories](product/user-stories.md)
 - [Use cases](product/use-cases.md)
 - [Visitor journeys](product/user-journeys.md)
+- [Content inventory](product/content-inventory.md)
 
 ## 🏗️ Architecture and engineering
 - [Architecture overview](architecture.md)
 - [Architecture diagrams](architecture/diagrams.md)
+- [Standalone diagram sources](architecture/README.md)
 - [API and integrations](api.md)
 - [Database status](database.md)
 - [Front-end standards](engineering/frontend-standards.md)
@@ -22,6 +24,7 @@ Welcome to the Cake Shop documentation. These guides describe the actual React +
 - [Browser support plan](engineering/browser-support.md)
 - [Project glossary](engineering/project-glossary.md)
 - [Technical debt register](engineering/technical-debt.md)
+- [Release process](engineering/release-process.md)
 - [Installation](installation.md)
 - [Development workflow](development.md)
 - [Environment configuration](operations/environment-configuration.md)
@@ -33,21 +36,25 @@ Welcome to the Cake Shop documentation. These guides describe the actual React +
 - [SEO and metadata](design/seo-and-metadata.md)
 - [Content guidelines](design/content-guidelines.md)
 - [Asset guidelines](design/assets.md)
+- [Asset attribution register](../ASSET_ATTRIBUTION.md)
 
 ## 🧪 Quality
 - [Testing strategy](quality/testing-strategy.md)
 - [Manual QA checklist](quality/qa-checklist.md)
 - [Test case catalogue](quality/test-cases.md)
 - [Performance guidance](quality/performance.md)
+- [Definition of done](quality/definition-of-done.md)
 
 ## 🔐 Security
 - [Threat model](security/threat-model.md)
 - [Data handling](security/data-handling.md)
+- [Secure development](security/secure-development.md)
 - [Security review checklist](security/security-review-checklist.md)
 
 ## 🚀 Operations
 - [Deployment guide](deployment.md)
 - [Static host examples](operations/deployment-host-examples.md)
+- [Environment configuration](operations/environment-configuration.md)
 - [Operations runbook](operations/runbook.md)
 - [Monitoring and observability](operations/monitoring-and-observability.md)
 - [Backup and recovery](operations/backup-recovery.md)
@@ -61,7 +68,10 @@ See [the template index](templates/README.md) for architecture, feature, bug, te
 ## 📌 Repository-level policies
 - [Contributing](../CONTRIBUTING.md)
 - [Code of Conduct](../CODE_OF_CONDUCT.md)
+- [Governance](../GOVERNANCE.md)
 - [Security reporting](../SECURITY.md)
+- [Privacy](../PRIVACY.md)
+- [Accessibility statement](../ACCESSIBILITY.md)
 - [Support](../SUPPORT.md)
 - [Changelog](../CHANGELOG.md)
 - [Roadmap](../ROADMAP.md)
