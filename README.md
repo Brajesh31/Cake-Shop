@@ -1,97 +1,190 @@
-# Cake Shop
+# 🎂 Cake Shop
 
-Cake Shop is a React and Vite front-end project for a bakery storefront concept. It presents cake and bakery imagery across a home page, cakes page, about page, and blog page. It is a UI demonstration: this repository does not contain commerce services or a production ordering flow.
+<p align="center">
+  <img src="public/img/logo.png" alt="Cake Shop logo" width="112" />
+</p>
 
-The existing demo link in the original project points to a Vercel deployment. Availability, ownership, and deployed revision can change independently of this repository.
+<h3 align="center">A bakery storefront UI built with React and Vite</h3>
 
-## What is included
+<p align="center">
+  A responsive visual showcase for cake collections, bakery stories, and editorial content.
+</p>
 
-- React 19 components rendered by Vite.
-- Client-side routes for Home, Cakes, About, and Blog using React Router.
-- Shared header, footer, hero, image, blog, and page-section components.
-- A Swiper carousel with local product imagery.
-- Local images under public/img.
-- Bootstrap, Font Awesome, Google Fonts, and Swiper styles loaded from CDNs or package imports.
+<p align="center">
+  <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white" />
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white" />
+  <img alt="Router" src="https://img.shields.io/badge/React_Router-7-CA4245?logo=reactrouter&logoColor=white" />
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-green.svg" />
+  <img alt="Status" src="https://img.shields.io/badge/Status-UI_Demo-orange" />
+</p>
 
-The current interface includes design placeholders. The order button, contact navigation item, social icons, video play control, blog pagination, and add-to-cart overlay do not implement purchasing, navigation, playback, or other backend actions. There is no cart, inventory, payment integration, customer account, contact submission, or order storage.
+---
 
-## Technology
+## 🧁 Project overview
 
-- Node.js and npm
-- Vite 6
-- React and React DOM 19
-- React Router DOM 7
-- Swiper 11
-- ESLint 9
+Cake Shop is a client-side React application for a bakery storefront concept. It showcases a home page, cake gallery, about page, and blog layout with shared navigation, footer components, image sections, and a Swiper carousel.
 
-The exact dependency ranges and resolved versions are recorded in package.json and package-lock.json.
+**Scope matters:** this repository currently delivers a front-end presentation. It does not include a backend, database, customer accounts, product inventory, a persistent cart, order processing, payment processing, or a working contact submission service. Visible order/cart controls are presentation placeholders until those features are deliberately implemented.
 
-## Run locally
+## ✨ What the current app includes
 
-Requirements: a supported Node.js release compatible with the Vite version in the lockfile, and npm.
-
-    git clone https://github.com/Brajesh31/Cake-Shop.git
-    cd Cake-Shop
-    npm ci
-    npm run dev
-
-Open the local URL printed by Vite, usually http://localhost:5173. The development server provides client-side route fallback.
-
-## Available commands
-
-- npm run dev starts Vite's local development server.
-- npm run build creates the static production bundle in dist.
-- npm run preview serves the built bundle locally for a production-style review.
-- npm run lint runs ESLint over the repository.
-
-There is no test script or automated test suite in the package manifest.
-
-## Pages
-
-| Path | Page content |
+| Area | Current implementation |
 | --- | --- |
-| / | Hero, introductory section, cake image carousel, visual media panel, blog cards, and Instagram-style image strip |
-| /cakes | Hero, two instances of the image carousel, and image strip |
-| /about | Hero, introductory content, visual media panel, blog cards, and image strip |
-| /blog | Hero, five repeated blog cards, and placeholder pagination |
+| 🏠 Home | Hero, introduction, cake carousel, media section, blog previews, image strip |
+| 🍰 Cakes | Hero, reusable image carousel, image strip |
+| 📖 About | Introductory content and shared promotional sections |
+| 📝 Blog | Static sample blog cards and placeholder pagination |
+| 🧭 Navigation | React Router browser routes |
+| 🧩 Shared UI | Header, footer, layout, button, blog and image components |
+| 🖼️ Assets | Local images in `public/img` |
+| 📱 Carousel | Swiper 11 |
 
-The shared layout wraps these routes in the same header and footer. Unknown paths do not currently have a dedicated not-found page.
+## 🧰 Technology stack
 
-## Project structure
+- **React 19** and **React DOM 19**
+- **Vite 6** for development and production bundling
+- **React Router DOM 7** for client-side routes
+- **Swiper 11** for the carousel
+- **Bootstrap**, **Font Awesome**, and **Google Fonts** for selected presentation assets
+- **ESLint 9** for static code checks
+- **npm** and the committed `package-lock.json` for dependency management
 
-    index.html                  Vite HTML entry point and external CDN assets
-    src/main.jsx                React root and global CSS import
-    src/App.jsx                 Browser router and route table
-    src/App.css                 Page and component styles
-    src/index.css               Global CSS
-    src/Views/Layout/           Shared header, footer, and layout
-    src/Views/Pages/            Route pages and home-page sections
-    src/Views/Pages/Components/ Reusable button, blog, and image components
-    public/img/                 Images served from the site root
-    docs/                       Architecture, setup, operations, and support guides
+## 🚀 Getting started
 
-See the [architecture guide](docs/architecture.md), [installation guide](docs/installation.md), and [development guide](docs/development.md) for more detail.
+### Prerequisites
 
-## Current limitations to review
+- Node.js compatible with the Vite version declared by this project
+- npm
+- Git
 
-- The visible ORDER NOW control is a styled element rather than a working link or form.
-- The CONTACT navigation item points to a placeholder fragment. Social icons and several more-content controls are not actionable links.
-- The carousel's “Add to cart” text is a CSS hover overlay, not a cart action.
-- The play control does not open or play a video. Blog pagination links point to placeholder fragments.
-- The home/about copy, testimonials or business details, and image rights should be checked by the project owner before real business use.
-- Some components use class or a misspelled classNameName attribute rather than React's className. Review the browser console and styling when changing these sections.
-- Stylesheet image URLs refer to paths under ../public/img. Vite serves public assets from the site root; verify these references in the production build and use root-based public URLs where needed.
-- Bootstrap, Font Awesome, and Google Fonts depend on third-party CDN availability. Review the exact provider terms, versions, integrity metadata, and privacy implications before production use.
-- BrowserRouter deployments need the host configured to serve index.html for application routes such as /cakes and /about.
+### Installation
 
-See [troubleshooting](docs/troubleshooting.md) for known issues and [deployment](docs/deployment.md) for hosting notes.
+```bash
+git clone https://github.com/Brajesh31/Cake-Shop.git
+cd Cake-Shop
+npm ci
+npm run dev
+```
 
-## Contributing and security
+Vite prints the local development URL in the terminal. The default is usually `http://localhost:5173`.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing changes. Report security issues privately using the process in [SECURITY.md](SECURITY.md); do not post sensitive details in a public issue.
+### Available scripts
 
-## License
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local Vite development server |
+| `npm run build` | Generate the production bundle in `dist/` |
+| `npm run preview` | Preview the generated production bundle |
+| `npm run lint` | Run ESLint |
 
-The project source is offered under the MIT License. See [LICENSE](LICENSE). Third-party libraries and media may have separate terms; verify those before redistribution or commercial use.
+There is currently no test script or automated test suite in `package.json`.
 
-Last updated: 2026-11-17 03:33 UTC
+## 🗺️ Application routes
+
+| URL | Page |
+| --- | --- |
+| `/` | Home |
+| `/cakes` | Cakes |
+| `/about` | About |
+| `/blog` | Blog |
+
+These are browser routes, not API endpoints. Hosting must rewrite unknown application paths to `index.html` so direct visits and refreshes work.
+
+## 🏗️ How the application works
+
+```mermaid
+flowchart TD
+    A[Browser request] --> B[index.html]
+    B --> C[src/main.jsx]
+    C --> D[src/App.jsx]
+    D --> E[React Router]
+    E --> F[Shared Layout]
+    F --> G[Header]
+    F --> H[Selected Page]
+    F --> I[Footer]
+    H --> J[Reusable sections]
+    J --> K[Local public images]
+    J --> L[Swiper carousel]
+```
+
+The app is a static client-side application. It currently has no service/API or database layer.
+
+For component boundaries and routing details, see [Architecture](docs/architecture.md).
+
+## 📁 Repository structure
+
+```text
+Cake-Shop/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── workflows/
+├── docs/
+│   ├── architecture/
+│   ├── design/
+│   ├── operations/
+│   ├── product/
+│   ├── quality/
+│   ├── security/
+│   └── templates/
+├── public/
+│   └── img/
+├── src/
+│   ├── Views/
+│   │   ├── Layout/
+│   │   └── Pages/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .env.example
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── README.md
+├── SECURITY.md
+└── package.json
+```
+
+## 🧭 Documentation
+
+| Guide | Description |
+| --- | --- |
+| [Documentation index](docs/README.md) | Documentation map and ownership |
+| [Product brief](docs/product/project-brief.md) | Purpose, users, goals, and non-goals |
+| [Features and limitations](docs/product/features.md) | Implemented UI versus planned commerce functionality |
+| [User journeys](docs/product/user-journeys.md) | Current visitor journeys and gaps |
+| [Architecture](docs/architecture.md) | Runtime, component hierarchy, routes, dependencies |
+| [System diagrams](docs/architecture/diagrams.md) | Mermaid context, component, and deployment diagrams |
+| [Design and accessibility](docs/design/accessibility.md) | UI, responsive, and inclusive design checklist |
+| [Installation](docs/installation.md) | Local setup |
+| [Development](docs/development.md) | Contribution workflow and coding practices |
+| [Testing strategy](docs/quality/testing-strategy.md) | Quality plan and test coverage gaps |
+| [QA checklist](docs/quality/qa-checklist.md) | Manual verification checklist |
+| [Security](docs/security/threat-model.md) | Current risk assessment and future service guidance |
+| [Deployment](docs/deployment.md) | Static hosting and SPA rewrite |
+| [Operations](docs/operations/runbook.md) | Release, rollback, and incident handling |
+| [Troubleshooting](docs/troubleshooting.md) | Known local and deployment issues |
+| [API status](docs/api.md) | Confirms there is no application API today |
+
+## 🛣️ Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for a phased plan. The highest-priority work is to make existing controls honest and accessible, establish a repeatable quality gate, and decide whether the project should remain a static showcase or become a real commerce application.
+
+## 🤝 Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md), follow the pull request template, and use the issue templates when reporting bugs or proposing features.
+
+## 🔐 Security
+
+Do not commit secrets, private customer information, payment details, or production credentials. Report vulnerabilities privately using [SECURITY.md](SECURITY.md).
+
+## 📄 License
+
+The repository's project source is licensed under the MIT License. See [LICENSE](LICENSE). Third-party packages, fonts, CDN resources, and image assets may have separate terms. Verify those before redistribution or commercial use.
+
+---
+
+<p align="center">Made with care for the craft of the web and the joy of cake. 🍰</p>
+
+_Last updated: 2026-11-17 UTC_
