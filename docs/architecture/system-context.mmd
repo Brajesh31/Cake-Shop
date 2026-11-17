@@ -1,0 +1,11 @@
+flowchart LR
+  Visitor[Visitor browser] --> StaticHost[Static hosting]
+  StaticHost --> Entry[index.html]
+  Entry --> React[React application]
+  React --> Router[React Router]
+  Router --> Pages[Home, Cakes, About, Blog]
+  Pages --> Assets[Local public images]
+  Pages --> Carousel[Swiper carousel]
+  Entry -. external resources .-> CDN[Fonts, Bootstrap, Font Awesome]
+  Pages -. not implemented .-> API[Future server API]
+  API -. not implemented .-> DB[(Future database)]
