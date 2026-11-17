@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">Cake Shop deployment workflow</title><desc id="desc">Developer changes are reviewed, installed, linted, built, deployed as static assets, then route refresh is verified.</desc>
+<defs><style>.bg{fill:#fffaf5}.node{fill:#fff;stroke:#8b5e3c;stroke-width:2;rx:14}.accent{fill:#fff0df;stroke:#b77942;stroke-width:2;rx:14}.line{stroke:#805a3c;stroke-width:3;fill:none;marker-end:url(#a)}.h{font:700 26px Arial;fill:#432818}.t{font:18px Arial;fill:#4b382a}.s{font:15px Arial;fill:#725c4a}</style><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3 z" fill="#805a3c"/></marker></defs>
+<rect width="1200" height="420" class="bg"/><text x="600" y="55" class="h" text-anchor="middle">Static Deployment Workflow</text>
+<rect x="35" y="155" width="165" height="90" class="node"/><text x="117" y="195" text-anchor="middle" class="t">Source</text><text x="117" y="220" text-anchor="middle" class="s">main branch</text>
+<path d="M200 200 H245" class="line"/><rect x="250" y="155" width="165" height="90" class="node"/><text x="332" y="195" text-anchor="middle" class="t">Review</text><text x="332" y="220" text-anchor="middle" class="s">Pull request</text>
+<path d="M415 200 H460" class="line"/><rect x="465" y="155" width="165" height="90" class="node"/><text x="547" y="195" text-anchor="middle" class="t">Install + lint</text><text x="547" y="220" text-anchor="middle" class="s">npm ci · lint</text>
+<path d="M630 200 H675" class="line"/><rect x="680" y="155" width="165" height="90" class="node"/><text x="762" y="195" text-anchor="middle" class="t">Build</text><text x="762" y="220" text-anchor="middle" class="s">npm run build</text>
+<path d="M845 200 H890" class="line"/><rect x="895" y="155" width="130" height="90" class="accent"/><text x="960" y="195" text-anchor="middle" class="t">dist/</text><text x="960" y="220" text-anchor="middle" class="s">Artifact</text>
+<path d="M1025 200 H1060" class="line"/><rect x="1065" y="155" width="110" height="90" class="node"/><text x="1120" y="195" text-anchor="middle" class="t">Host</text><text x="1120" y="220" text-anchor="middle" class="s">Static</text>
+<text x="600" y="315" text-anchor="middle" class="t">Post-deploy: verify /, /cakes, /about, /blog and refresh each route</text>
+<text x="600" y="350" text-anchor="middle" class="s">Configure the host to serve index.html for client-side routes.</text>
+</svg>
