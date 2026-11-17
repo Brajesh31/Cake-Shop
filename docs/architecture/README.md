@@ -8,6 +8,8 @@ These Mermaid files are maintained as standalone diagram sources. They describe 
 - [Deployment flow](deployment-flow.mmd)
 - [Future commerce flow](future-commerce-flow.mmd)
 
+Rendered SVG visuals are available in [docs/assets](../assets/README.md).
+
 The future commerce diagram is a planning concept only. The current repository has no backend, database, cart, checkout, payment, or order service.
 
 When routes or major components change, update the relevant diagram and the prose architecture guide in the same pull request.
