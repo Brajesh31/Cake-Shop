@@ -132,7 +132,16 @@ Reusable forms and review checklists are in [docs/templates](docs/templates/READ
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), use the GitHub issue templates, and follow the pull request checklist. Visual changes should include screenshots and responsive checks.
 
-## 🔐 Security
+## 📌 Repository policies
+
+- [Contributing](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Governance](GOVERNANCE.md)
+- [Security policy](SECURITY.md)
+- [Privacy notice](PRIVACY.md)
+- [Accessibility statement](ACCESSIBILITY.md)
+- [Asset attribution register](ASSET_ATTRIBUTION.md)
+- [Support](SUPPORT.md)
 
 Never commit credentials or put secrets in VITE_ variables. Report vulnerabilities privately using [SECURITY.md](SECURITY.md).
 
