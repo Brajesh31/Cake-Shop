@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Cake Shop current application architecture</title><desc id="desc">Browser loads the Vite entry point, React root, router, shared layout, four pages, local assets and Swiper.</desc>
+<defs><style>.bg{fill:#fffaf5}.node{fill:#fff;stroke:#8b5e3c;stroke-width:2;rx:16}.accent{fill:#fff0df;stroke:#b77942;stroke-width:2;rx:16}.line{stroke:#805a3c;stroke-width:3;fill:none;marker-end:url(#arrow)}.h{font:700 25px Arial;fill:#432818}.t{font:18px Arial;fill:#4b382a}.small{font:15px Arial;fill:#725c4a}</style><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3 z" fill="#805a3c"/></marker></defs>
+<rect class="bg" width="1200" height="620"/><text x="600" y="52" text-anchor="middle" class="h">Cake Shop · Current Front-end Architecture</text>
+<rect x="455" y="85" width="290" height="62" class="accent"/><text x="600" y="123" text-anchor="middle" class="t">Visitor Browser</text>
+<path d="M600 147 V184" class="line"/><rect x="455" y="188" width="290" height="62" class="node"/><text x="600" y="226" text-anchor="middle" class="t">index.html → main.jsx</text>
+<path d="M600 250 V287" class="line"/><rect x="455" y="291" width="290" height="62" class="node"/><text x="600" y="329" text-anchor="middle" class="t">App.jsx · React Router</text>
+<path d="M600 353 V390" class="line"/><rect x="455" y="394" width="290" height="62" class="accent"/><text x="600" y="432" text-anchor="middle" class="t">Shared Layout</text>
+<path d="M600 456 V482 M600 482 H170 V510 M600 482 H430 V510 M600 482 H770 V510 M600 482 H1030 V510" class="line"/>
+<rect x="75" y="514" width="190" height="70" class="node"/><text x="170" y="555" text-anchor="middle" class="t">Home</text>
+<rect x="335" y="514" width="190" height="70" class="node"/><text x="430" y="555" text-anchor="middle" class="t">Cakes</text>
+<rect x="675" y="514" width="190" height="70" class="node"/><text x="770" y="555" text-anchor="middle" class="t">About</text>
+<rect x="935" y="514" width="190" height="70" class="node"/><text x="1030" y="555" text-anchor="middle" class="t">Blog</text>
+<text x="600" y="606" text-anchor="middle" class="small">Static client-side UI · no API, database, checkout, or payment service</text>
+</svg>
