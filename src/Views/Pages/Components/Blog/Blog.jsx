@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Blog = ({ img, blog_title, blog_Content }) => {
     return (
         <>
