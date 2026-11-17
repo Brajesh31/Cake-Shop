@@ -1,49 +1,75 @@
 # 📚 Documentation index
 
-Welcome to the Cake Shop project documentation. These guides describe the current React + Vite codebase, how to work on it, and what must be designed before adding real commerce features.
+Welcome to the Cake Shop documentation. These guides describe the actual React + Vite application, project workflows, quality expectations, and future work.
 
-> **Accuracy note:** Cake Shop is currently a static front-end showcase. The docs distinguish existing UI from planned capabilities. No checkout, order API, inventory service, payment integration, or persistent cart is present in the current source.
+> **Scope warning:** this repository currently contains a static storefront UI. It does not provide a backend, database, authentication, persistent cart, checkout, payment, inventory, or order fulfillment. Future-state documents are clearly labeled.
 
-## 🧭 Guides
-
-### Product and experience
+## 🎯 Product
 - [Project brief](product/project-brief.md)
+- [Requirements specification](product/requirements.md)
 - [Feature inventory and limitations](product/features.md)
+- [User stories](product/user-stories.md)
+- [Use cases](product/use-cases.md)
 - [Visitor journeys](product/user-journeys.md)
 
-### Engineering
+## 🏗️ Architecture and engineering
 - [Architecture overview](architecture.md)
 - [Architecture diagrams](architecture/diagrams.md)
-- [API and integration status](api.md)
+- [API and integrations](api.md)
 - [Database status](database.md)
+- [Front-end standards](engineering/frontend-standards.md)
+- [Dependency management](engineering/dependency-management.md)
+- [Browser support plan](engineering/browser-support.md)
+- [Project glossary](engineering/project-glossary.md)
+- [Technical debt register](engineering/technical-debt.md)
 - [Installation](installation.md)
 - [Development workflow](development.md)
+- [Environment configuration](operations/environment-configuration.md)
 
-### Quality and design
+## 🎨 Design and content
+- [Design system](design/design-system.md)
+- [Accessibility guide](design/accessibility.md)
+- [Accessibility audit record](quality/accessibility-audit.md)
+- [SEO and metadata](design/seo-and-metadata.md)
+- [Content guidelines](design/content-guidelines.md)
+- [Asset guidelines](design/assets.md)
+
+## 🧪 Quality
 - [Testing strategy](quality/testing-strategy.md)
 - [Manual QA checklist](quality/qa-checklist.md)
-- [Accessibility and responsive design](design/accessibility.md)
-- [Visual asset guide](design/assets.md)
+- [Test case catalogue](quality/test-cases.md)
+- [Performance guidance](quality/performance.md)
 
-### Security and operations
+## 🔐 Security
 - [Threat model](security/threat-model.md)
 - [Data handling](security/data-handling.md)
-- [Deployment](deployment.md)
+- [Security review checklist](security/security-review-checklist.md)
+
+## 🚀 Operations
+- [Deployment guide](deployment.md)
+- [Static host examples](operations/deployment-host-examples.md)
 - [Operations runbook](operations/runbook.md)
+- [Monitoring and observability](operations/monitoring-and-observability.md)
+- [Backup and recovery](operations/backup-recovery.md)
 - [Release and rollback](operations/release-rollback.md)
 - [Incident response](operations/incident-response.md)
+- [Troubleshooting](troubleshooting.md)
 
-### Templates
-See [templates/README.md](templates/README.md) for ADR, feature, bug, test-plan, risk, incident, and release templates.
+## 🧩 Templates
+See [the template index](templates/README.md) for architecture, feature, bug, test, risk, security, accessibility, design, content, deployment, incident, support, and release templates.
 
-## 🔎 Source of truth
+## 📌 Repository-level policies
+- [Contributing](../CONTRIBUTING.md)
+- [Code of Conduct](../CODE_OF_CONDUCT.md)
+- [Security reporting](../SECURITY.md)
+- [Support](../SUPPORT.md)
+- [Changelog](../CHANGELOG.md)
+- [Roadmap](../ROADMAP.md)
+- [License](../LICENSE)
 
-When documentation conflicts with source code, inspect the source and update the guide in the same pull request. Do not document a feature as implemented until the code path exists and has been tested.
-
-## 📝 Maintenance expectations
-
-- Update route and component descriptions when routes or page composition changes.
-- Update installation instructions when scripts or dependencies change.
-- Update the API and data guides when service integrations are introduced.
-- Record important technical decisions as Architecture Decision Records.
-- Remove obsolete guidance rather than leaving contradictory instructions.
+## Documentation maintenance rules
+1. Source code is the authority for current behavior.
+2. Label planned capabilities as future work.
+3. Update route, API, data, and architecture documentation when implementation changes.
+4. Keep diagrams and examples aligned with current source.
+5. Do not mark unexecuted tests, audits, or releases as complete.
