@@ -1,0 +1,9 @@
+flowchart TD
+  Source[Source code on main] --> Review[Pull request review]
+  Review --> Install[npm ci]
+  Install --> Lint[npm run lint]
+  Lint --> Build[npm run build]
+  Build --> Artifact[dist static artifact]
+  Artifact --> Host[Static hosting]
+  Host --> Browser[Visitor browser]
+  Host -. rewrite application paths .-> Entry[index.html]
