@@ -1,7 +1,6 @@
-import React from 'react'
 import Blog from '../Components/Blog/Blog'
 
-const Section6 = ({ img, blog_title, blog_Content }) => {
+const Section6 = () => {
     return (
         <>
             <section className='main_container'>
