@@ -1,0 +1,14 @@
+flowchart TD
+  A[Browse catalogue] --> B[Product details]
+  B --> C[Choose options and quantity]
+  C --> D[Server validates price and availability]
+  D --> E[Cart]
+  E --> F[Checkout and delivery details]
+  F --> G[Server creates pending order]
+  G --> H[Payment provider]
+  H --> I[Verified payment webhook]
+  I --> J[Order confirmation and fulfillment]
+  H --> K[Payment failure handling]
+  style A fill:#fff,stroke:#888
+  style J fill:#fff,stroke:#888
+  style K fill:#fff,stroke:#888
