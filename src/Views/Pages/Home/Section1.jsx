@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../Components/Button/Button';
 
 const Section1 = ({ title = "Healthy Made", title2 = "Delicious Cake" }) => {
