@@ -12,7 +12,7 @@ const Blogs = ({ img }) => {
                                 <p className="para_two card-text mt-3 pt-1">That dominion stars lights dominion divide years
                                     for
                                     fourth have
-                                    don't stars is that he earth it first without heaven in place seed it second morning
+                                    don&apos;t stars is that he earth it first without heaven in place seed it second morning
                                     saying.
                                 </p>
                                 <div className="icon_box d-flex">
