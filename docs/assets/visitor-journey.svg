@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Cake Shop visitor journey</title><desc id="desc">A visitor opens the home page, chooses cakes, about, or blog, and views static content. Ordering and pagination remain placeholders.</desc>
+<defs><style>.bg{fill:#fffaf5}.node{fill:#fff;stroke:#8b5e3c;stroke-width:2;rx:16}.accent{fill:#fff0df;stroke:#b77942;stroke-width:2;rx:16}.warn{fill:#fff4e5;stroke:#c77b25;stroke-width:2;rx:16}.line{stroke:#805a3c;stroke-width:3;fill:none;marker-end:url(#arr)}.h{font:700 26px Arial;fill:#432818}.t{font:18px Arial;fill:#4b382a}.s{font:15px Arial;fill:#725c4a}</style><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3 z" fill="#805a3c"/></marker></defs>
+<rect width="1200" height="430" class="bg"/><text x="600" y="55" class="h" text-anchor="middle">Current Visitor Journey</text>
+<rect x="55" y="160" width="200" height="90" class="accent"/><text x="155" y="198" class="t" text-anchor="middle">Open website</text><text x="155" y="224" class="s" text-anchor="middle">Home route</text>
+<path d="M255 205 H330" class="line"/><rect x="335" y="160" width="200" height="90" class="node"/><text x="435" y="198" class="t" text-anchor="middle">Choose a page</text><text x="435" y="224" class="s" text-anchor="middle">Navigation</text>
+<path d="M535 205 H600 V115 H660 M600 205 V205 H660 M600 205 V295 H660" class="line"/>
+<rect x="665" y="75" width="190" height="80" class="node"/><text x="760" y="122" class="t" text-anchor="middle">Cakes</text>
+<rect x="665" y="165" width="190" height="80" class="node"/><text x="760" y="212" class="t" text-anchor="middle">About</text>
+<rect x="665" y="255" width="190" height="80" class="node"/><text x="760" y="302" class="t" text-anchor="middle">Blog</text>
+<path d="M855 115 H930 V160 M855 205 H930 M855 295 H930 V250" class="line"/>
+<rect x="935" y="145" width="220" height="110" class="warn"/><text x="1045" y="185" class="t" text-anchor="middle">Static content</text><text x="1045" y="212" class="s" text-anchor="middle">Ordering/pagination</text><text x="1045" y="235" class="s" text-anchor="middle">not functional</text>
+<text x="600" y="390" class="s" text-anchor="middle">This diagram describes the current UI, not a working purchase or checkout flow.</text>
+</svg>
