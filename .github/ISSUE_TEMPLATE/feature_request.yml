@@ -1,0 +1,40 @@
+name: ✨ Feature request
+description: Propose a user-facing improvement or new capability.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Who has this problem and what is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What observable behavior would prove this is done?
+    validations:
+      required: true
+  - type: checkboxes
+    id: considerations
+    attributes:
+      label: Quality considerations
+      options:
+        - label: Includes mobile and responsive behavior
+        - label: Includes keyboard and accessibility behavior
+        - label: Considers privacy and security
+        - label: Updates documentation
