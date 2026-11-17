@@ -1,9 +1,7 @@
-import React from 'react'
-
-const Section2 = ({ img }) => {
+const Section2 = () => {
     return (
         <>
-            <section classNameName='main_container'>
+            <section className='main_container'>
                 <div className="cont container_box container-fluid">
                     <div className="text_container">
                         <div className="para pt-5">
@@ -39,7 +37,7 @@ const Section2 = ({ img }) => {
                                 commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.</p>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-4 col-xxl-4 mt-md-5">
-                            <img src={img = "/img/about image.jpg"} className="img-fluid" alt="image" />
+                            <img src="/img/about image.jpg" className="img-fluid" alt="image" />
                         </div>
                     </div>
                 </div>
