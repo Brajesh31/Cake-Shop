@@ -1,0 +1,11 @@
+flowchart TD
+  Start[Visitor opens website] --> Home[Home route]
+  Home --> Browse{Choose destination}
+  Browse -->|Cakes| Cakes[/cakes]
+  Browse -->|About| About[/about]
+  Browse -->|Blog| Blog[/blog]
+  Cakes --> Gallery[Browse cake imagery]
+  About --> Story[Read about content]
+  Blog --> Articles[Read static blog cards]
+  Gallery --> Placeholder[Order action is not connected]
+  Articles --> Pagination[Pagination is placeholder]
