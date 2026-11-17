@@ -37,6 +37,7 @@ Welcome to the Cake Shop documentation. These guides describe the actual React +
 - [Content guidelines](design/content-guidelines.md)
 - [Asset guidelines](design/assets.md)
 - [Asset attribution register](../ASSET_ATTRIBUTION.md)
+- [SVG documentation visuals](assets/README.md)
 
 ## 🧪 Quality
 - [Testing strategy](quality/testing-strategy.md)
