@@ -1,9 +1,7 @@
-import React from 'react'
-
 const Section4 = () => {
     return (
         <>
-            <section classNameName='main_container border border-danger'>
+            <section className='main_container border border-danger'>
                 <div className="container-fluid pt-5 py-5" style={{ background: "#000" }}>
                     <div className="image_section container d-flex justify-content-center align-items-center">
                         <div className="d-flex justify-content-center">
