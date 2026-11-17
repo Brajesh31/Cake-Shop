@@ -1,4 +1,3 @@
-import React from 'react';
 import Section1 from '../Home/Section1';
 import Section3 from '../Home/Section3';
 import Section7 from '../Home/Section7';
